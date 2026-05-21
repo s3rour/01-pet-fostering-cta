@@ -1,0 +1,162 @@
+/* Base typographic and layout settings */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #f3f7fb;
+  background-color: #eaf6fb;
+}
+
+/* Center content and keep a consistent page width */
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Simple site header with brand styling */
+.site-header {
+  padding: 18px 0;
+  background-color: #0b4e6b;
+  text-align: center;
+}
+
+.brand {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Tall visual banner with background image and overlay */
+.cta-banner {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  background-image: url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Soft dark overlay to keep text readable */
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 60, 88, 0.55);
+}
+
+/* Text block inside the banner */
+.cta-content {
+  position: relative;
+  padding: 36px;
+  max-width: 660px;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c8f0ff;
+}
+
+.cta-banner h1 {
+  margin: 0 0 20px;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.05;
+  color: #ffffff;
+}
+
+.cta-text {
+  margin: 0 0 30px;
+  max-width: 620px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #dbeef9;
+}
+
+/* Bright CTA button that stands out against the banner */
+.cta-button {
+  display: inline-block;
+  padding: 16px 28px;
+  border-radius: 999px;
+  background-color: #3ad8d1;
+  color: #053842;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: #29b8ad;
+}
+
+/* Section showing the pet image and fostering details */
+.info-section {
+  padding: 36px 0 52px;
+  background-color: #f4f9fc;
+}
+
+.info-columns {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.info-column {
+  flex: 1 1 320px;
+  min-width: 280px;
+  box-sizing: border-box;
+}
+
+.info-image img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.info-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.info-copy h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 2rem;
+  color: #003f6b;
+}
+
+.info-copy p {
+  margin: 0 0 18px;
+  line-height: 1.8;
+  color: #175b74;
+}
+
+.info-copy p:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer contact bar at the bottom of the page */
+.site-footer {
+  background-color: #0b4e6b;
+  color: #e9f6fb;
+}
+
+.footer-bar {
+  padding: 18px 0;
+  text-align: center;
+}
+
+.footer-bar p {
+  margin: 0;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+}
+
